@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="style" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <h1>Movie Recommendation App</h1>
+    
+    <form>
+      <h2>Preferences</h2>
+      
+      <label for="genre">Genre:</label>
+      <select id="genre">
+        <option value="">All</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="crime">Crime</option>
+        <option value="drama">Drama</option>
+        <option value="horror">Horror</option>
+        <option value="sci-fi">Sci-Fi</option>
+      </select>
+      
+      <label for="rating">Rating:</label>
+      <select id="rating">
+        <option value="">All</option>
+        <option value="1">1 star</option>
+        <option value="2">2 stars</option>
+        <option value="3">3 stars</option>
+        <option value="4">4 stars</option>
+        <option value="5">5 stars</option>
+      </select>
+
+      <label for="year">Year:</label>
+          <select id="year">
+            <option value="">All</option>
+            <option value="2008">2008</option>
+            <option value="2003">2003</option>
+            <option value="1999">1999</option>
+            <option value="1966">1966</option>
+            <option value="1957">1957</option>
+            <option value="1974">1974</option>
+            <option value="1972">1972</option>
+            <option value="1994">1994</option>
+          </select>
+      
+      <button type="button" onclick="recommendMovies()">Recommend Movies</button>
+    </form> 
+    
+    <div id="movie-list">
+      <h2>Movie Recommendations</h2>
+      <ul></ul>
+    </div>
+
+
+  
+
+    <script src="app.js"></script>
+
+</body>
+</html>
